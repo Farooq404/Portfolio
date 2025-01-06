@@ -9,7 +9,7 @@
         * {
             margin: 0;
             padding: 0;
-  /* font-family: "Poppins", serif;
+            /* font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal; */
 
@@ -19,71 +19,97 @@
             background-color: rgb(4, 4, 55);
             color: white;
         }
-        nav{
+
+        nav {
             display: flex;
-         align-items: center;
+            align-items: center;
             justify-content: space-around;
             height: 100px;
             background-color: rgb(12, 12, 58);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-      nav ul li {
-      list-style: none;
+
+        nav ul li {
+            list-style: none;
             margin: 0 23px;
         }
+
         nav ul li a {
-            text-decoration:none;
+            text-decoration: none;
             color: white;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             color: rgb(203, 203, 234);
         }
-        .left{
-           font-size:1.5em ; 
+
+        .left {
+            font-size: 1.5em;
         }
+
         /*  firstsection styling include heading & image */
-        .firstSection{
+        .firstSection {
             display: flex;
             justify-content: space-around;
             margin: 23px 0;
             align-items: center;
         }
-        .firstSection > div{
+
+        .firstSection>div {
             width: 30%;
         }
-        .leftSection{
+
+        .leftSection {
             /* background-color: rgb(143, 82, 200); */
             font-size: 2.7rem;
-            
+
 
         }
-        .rightSection{
+
+        .rightSection {
             /* background-color: rgb(143, 82, 200); */
-            
+
         }
 
-        .rightSection img{
+        .rightSection img {
             margin: 0 0 0 -96px;
-            
+
         }
 
-        .purple{
+        .purple {
             color: blueviolet;
         }
-        #element{
+
+        #element {
             color: blueviolet;
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vw;
             margin: auto;
         }
+
+        .line_below {
+            border: 0.5px solid rgb(69, 46, 75);
+            margin: 20px 20px;
+        }
+
+        .secondSection h1{
+            margin: 23px;
+        }
+        .goal{
+        }
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -103,11 +129,11 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi,My name is <span class="purple">Farooq</span>  
+                Hi,My name is <span class="purple">Farooq</span>
                 <div>and I am a passionate</div>
                 <!-- <div>Web Developer</div> -->
                 <span id="element"></span>
@@ -118,17 +144,22 @@
         </section>
 
         <!-- second section -->
-         <section class="secondSection">
-            <h1>Past Experience</h1>
-         </section>
+        <!-- <section class="secondSection">
+            <hr class="line_below">
+            <h1>Goals</h1>
+            <div class="goal">
+                <ul></ul>
+            </div>
+        </section> -->
+        <!-- need time -->
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer','Graphic Designer', 'Web Designer','Video Editor'],
-      typeSpeed: 50,
-    });
-  </script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor', 'Graphic Designer', 'Web Designer', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
